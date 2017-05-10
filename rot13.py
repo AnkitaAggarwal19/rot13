@@ -46,5 +46,5 @@ class MainPage(Handler):
 	rot_text = rot13(text)
 	self.render("rot.html", text = rot_text)
 
-app = webapp2.WSGIApplication([('/unit2/rot13',MainPage)], debug = True)
+app = webapp2.WSGIApplication([('/',MainPage)], debug = True)
 
